@@ -1,4 +1,4 @@
-# Looking for ServerMod?
+# Looking for ServerMod
 ServerMod is on its own repo now: https://github.com/ServerMod/Smod2/
 
 # MultiAdmin
