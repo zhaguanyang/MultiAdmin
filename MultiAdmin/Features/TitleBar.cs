@@ -68,12 +68,6 @@ namespace MultiAdmin.Features
 
 			if (Server.SessionSocket != null)
 			{
-				titleBar.Add($"Port: {Server.Port}");
-				titleBar.Add($"PID: {ServerProcessId}");
-			}
-
-			if (Server.SessionSocket != null)
-			{
 				titleBar.Add($"Console Port: {Server.SessionSocket.Port}");
 			}
 
