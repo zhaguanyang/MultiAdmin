@@ -59,15 +59,16 @@ namespace MultiAdmin.Features
 			{
 				titleBar.Add($"Config: {Server.serverId}");
 			}
+			
+			if (Server.IsGameProcessRunning)
+			{
+				titleBar.Add($"Port: {Server.Port}");
+				titleBar.Add($"PID: {ServerProcessId}");
+			}
 
 			if (Server.SessionSocket != null)
 			{
 				titleBar.Add($"Console Port: {Server.SessionSocket.Port}");
-			}
-
-			if (Server.IsGameProcessRunning)
-			{
-				titleBar.Add($"PID: {ServerProcessId}");
 			}
 
 			try
