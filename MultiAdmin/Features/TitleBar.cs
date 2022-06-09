@@ -67,6 +67,7 @@ namespace MultiAdmin.Features
 
 			if (Server.IsGameProcessRunning)
 			{
+				titleBar.Add($"Port: {Server.Port}");
 				titleBar.Add($"PID: {ServerProcessId}");
 			}
 
