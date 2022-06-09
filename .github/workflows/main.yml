@@ -8,8 +8,8 @@ jobs:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        os: [ubuntu-18.04, windows-latest]
-        framework: ['5.0']
+        os: [windows-latest]
+        framework: ['6.0']
         include:
         - os: ubuntu-18.04
           target: linux-x64
